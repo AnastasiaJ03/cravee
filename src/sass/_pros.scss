@@ -1,0 +1,66 @@
+@use "./vars" as v;
+
+.pros {
+    margin-bottom: 18rem;
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__left {
+        position: relative;
+        img {
+            border-bottom-left-radius: 3rem;
+            border-top-left-radius: 3rem;
+        }
+        a {
+            position: absolute;
+            transform: translate(-50%);
+            top: 50%;
+            left: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100px;
+            height: 100px;
+            background-color: #fff;
+            border-radius: 50px;
+        }
+
+        .play {
+            width: 50px;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
+
+    &__right {
+        text-align: center;
+        font-size: 2rem;
+        padding: 9rem;
+        border-bottom-right-radius: 3rem;
+        border-top-right-radius: 3rem;
+        background-color: rgba(255, 255, 255, 0.6);
+        p {
+            font-weight: 300;
+        }
+
+        &-inner {
+            div > *:last-child {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &-heading {
+            h2 {
+                font-family: v.$ff-Poller-One;
+                color: v.$active-links;
+                font-size: 5.4rem;
+                line-height: 7rem;
+            }
+            p {
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

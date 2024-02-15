@@ -1,0 +1,36 @@
+@use "./vars" as v;
+
+body {
+    font-family: v.$ff-Josefin-Sans;
+    background: v.$background-header;
+}
+.swiper {
+    max-width: 80%;
+    img {
+        width: 500px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.swiper-slide {
+    // border: 1px solid white;
+    padding-block: 40px;
+}
+
+.swiper__text {
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.swiper__heading {
+    font-size: 28px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #e93e4b !important;
+}

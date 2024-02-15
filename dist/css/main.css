@@ -1,0 +1,515 @@
+/* Box sizing rules */
+:root {
+  font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.header__list a.page {
+  color: #e93e4b;
+}
+
+.btn {
+  text-transform: capitalize;
+  background-color: #e93e4b;
+  border-radius: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  color: #fff;
+  padding: 1.2rem;
+  width: max-content;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cart {
+  background-color: #1f9be3;
+  padding: 2rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.pumpkin {
+  background-color: #F68A25;
+  padding: 2rem;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.testimonials {
+  margin-bottom: 12rem;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background: #f6f4ef;
+}
+
+.swiper {
+  max-width: 80%;
+}
+.swiper img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  padding-block: 40px;
+}
+
+.swiper__text {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.swiper__heading {
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e93e4b !important;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  padding-block: 2rem;
+  font-size: 2rem;
+  font-family: "Poller One", serif;
+  background-color: #f6f4ef;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+  gap: 4rem;
+}
+@media (max-width: 1100px) {
+  .header__list {
+    display: none;
+  }
+}
+.header__list a {
+  color: rgba(0, 0, 0, 0.65);
+}
+.header__list a:hover {
+  color: #e93e4b;
+}
+.header .hamburger__menu {
+  display: none;
+}
+@media (max-width: 1100px) {
+  .header .hamburger__menu {
+    display: block;
+  }
+}
+.header .hamburger__menu img {
+  width: 50px;
+}
+
+.hero {
+  position: relative;
+}
+.hero__img {
+  height: 120vh;
+}
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero__text {
+  font-family: "Poller One", serif;
+  color: #f8f8f8;
+  background-color: #F68A25;
+  max-width: 580px;
+  opacity: 0.9;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 2rem;
+  font-size: 4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 1100px) {
+  .hero__text {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 599px) {
+  .hero__text {
+    font-size: 3rem;
+  }
+}
+.hero__pattern {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.about__inner {
+  font-size: 3.8rem;
+  font-weight: 300;
+  max-width: 1100px;
+  text-align: center;
+  margin: 0 auto;
+  padding-block: 10.5rem;
+}
+
+.products .swiper {
+  padding-block: 10rem;
+}
+.products .swiper-slide {
+  position: relative;
+}
+.products .swiper-slide:hover .btn {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -115%);
+  transition: opacity 0.5s ease-in-out 0.4s, transform 0.5s ease-in-out 0.2s;
+}
+.products-swiper-pagination {
+  bottom: 5rem !important;
+}
+.products img {
+  border-radius: 20px;
+}
+.products__heading h2 {
+  font-family: "Poller One", serif;
+  font-weight: 500;
+  line-height: 1.2;
+  color: #e93e4b;
+  text-align: center;
+  font-size: 6rem;
+  margin-bottom: 3rem;
+}
+.products__heading p {
+  text-align: center;
+  font-weight: 200;
+  font-size: 3rem;
+}
+.products__text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  border: 1px solid #191919;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 200px;
+}
+.products__text h3 {
+  font-family: "Poller One", serif;
+  font-size: 2rem;
+  text-align: center;
+  color: rgb(33, 37, 41);
+}
+
+.pros {
+  margin-bottom: 18rem;
+}
+.pros__inner {
+  display: flex;
+  align-items: flex-start;
+}
+.pros__left {
+  position: relative;
+}
+.pros__left img {
+  border-bottom-left-radius: 3rem;
+  border-top-left-radius: 3rem;
+}
+.pros__left a {
+  position: absolute;
+  transform: translate(-50%);
+  top: 50%;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 50px;
+}
+.pros__left .play {
+  width: 50px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.pros__right {
+  text-align: center;
+  font-size: 2rem;
+  padding: 9rem;
+  border-bottom-right-radius: 3rem;
+  border-top-right-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.pros__right p {
+  font-weight: 300;
+}
+.pros__right-inner div > *:last-child {
+  margin-bottom: 2rem;
+}
+.pros__right-heading h2 {
+  font-family: "Poller One", serif;
+  color: #e93e4b;
+  font-size: 5.4rem;
+  line-height: 7rem;
+}
+.pros__right-heading p {
+  margin-bottom: 2rem;
+}
+
+.services {
+  margin-bottom: 15rem;
+}
+.services__inner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.services div > * + * {
+  margin-top: 0.5rem;
+}
+.services div {
+  text-align: center;
+}
+.services div img {
+  margin: 0 auto;
+}
+.services h3 {
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+.services p {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.subscribe__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe__inner h2 {
+  font-family: "Poller One", serif;
+  color: #e93e4b;
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+.subscribe__inner p {
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin-bottom: 7rem;
+}
+.subscribe__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.subscribe input {
+  border: none;
+  background: #fff;
+  padding: 1.6rem;
+  width: 650px;
+  max-width: 70%;
+  font-size: 2rem;
+}
+.subscribe button {
+  border: none;
+  background: transparent;
+  background: #fff;
+  padding: 1.6rem;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-family: "Poller One", serif;
+}
+.subscribe__socials {
+  margin-bottom: 12rem;
+}
+.subscribe__socials ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 2.3rem;
+}
+.subscribe__socials a {
+  color: #dcdad4;
+}
+.subscribe__socials a:hover {
+  color: #e93e4b;
+}
+
+.footer {
+  padding: 22rem 10rem 10rem 0;
+  background: url("../images/footer-bg.jpg") no-repeat center/cover;
+  position: relative;
+}
+.footer__heading .spiralling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  rotate: 180deg;
+  translate: 0 -1px;
+}
+.footer__text {
+  max-width: 700px;
+  border-radius: 30px;
+  padding: 2rem;
+  opacity: 0.9;
+  background-color: #F68A25;
+  margin: 0 auto;
+  text-align: center;
+}
+.footer__text h3 {
+  color: #fff;
+  font-size: 8rem;
+  font-family: "Poller One", serif;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 2.3rem;
+}
+.footer__text a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-size: 1.6rem;
+}
+
+.footer__bottom {
+  padding: 2rem;
+}
+.footer__bottom p {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+}
+.footer__bottom a {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  color: inherit;
+}
+
+.product-links {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+.product-links a:hover {
+  scale: 1.1;
+}
+.product-links a {
+  transition: scale 0.2s ease-in;
+}
+
+/*# sourceMappingURL=main.css.map */

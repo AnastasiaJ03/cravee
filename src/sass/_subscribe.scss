@@ -1,0 +1,60 @@
+@use "./vars" as v;
+
+.subscribe {
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+            font-family: v.$ff-Poller-One;
+            color: v.$active-links;
+            font-size: 6rem;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 2.2rem;
+            font-weight: 300;
+            margin-bottom: 7rem;
+        }
+    }
+
+    &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 6rem;
+    }
+    input {
+        border: none;
+        background: #fff;
+        padding: 1.6rem;
+        width: 650px;
+        max-width: 70%;
+        font-size: 2rem;
+    }
+    button {
+        border: none;
+        background: transparent;
+        background: #fff;
+        padding: 1.6rem;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-family: v.$ff-Poller-One;
+    }
+    &__socials {
+        margin-bottom: 12rem;
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            font-size: 2.3rem;
+        }
+        a {
+            color: #dcdad4;
+            &:hover {
+                color: v.$active-links;
+            }
+        }
+    }
+}

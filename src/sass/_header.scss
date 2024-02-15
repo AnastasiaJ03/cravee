@@ -1,0 +1,39 @@
+@use "./vars" as v;
+@use "./mixins" as m;
+
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding-block: 2rem;
+    font-size: 2rem;
+    font-family: v.$ff-Poller-One;
+    background-color: v.$background-header;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list {
+        display: flex;
+        gap: 4rem;
+        @include m.for-laptop {
+            display: none;
+        }
+        a {
+            color: rgba(0, 0, 0, 0.65);
+            &:hover {
+                color: v.$active-links;
+            }
+        }
+    }
+    .hamburger__menu {
+        display: none;
+        @include m.for-laptop {
+            display: block;
+        }
+        img {
+            width: 50px;
+        }
+    }
+}

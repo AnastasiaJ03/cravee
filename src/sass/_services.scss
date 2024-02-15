@@ -1,0 +1,28 @@
+@use "./vars" as v;
+
+.services {
+    margin-bottom: 15rem;
+    &__inner {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    div > * + * {
+        margin-top: 0.5rem;
+    }
+
+    div {
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+    }
+    h3 {
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+    p {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,44 @@
+@use "./vars" as v;
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header__list a.page {
+    color: v.$active-links;
+}
+
+.btn {
+    text-transform: capitalize;
+    background-color: v.$active-links;
+    border-radius: 2rem;
+    font-weight: 500;
+    display: inline-block;
+    color: #fff;
+    padding: 1.2rem;
+    width: max-content;
+    font-size: 1.4rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cart {
+    background-color: #1f9be3;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.pumpkin {
+    background-color: v.$background-orange;
+    padding: 2rem;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}

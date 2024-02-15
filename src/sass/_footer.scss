@@ -1,0 +1,72 @@
+@use "./vars" as v;
+
+.footer {
+    padding: 22rem 10rem 10rem 0;
+    background: url("../images/footer-bg.jpg") no-repeat center/cover;
+    position: relative;
+    &__heading {
+        .spiralling {
+            position: absolute;
+            top: 0;
+            left: 0;
+            rotate: 180deg;
+            translate: 0 -1px;
+        }
+    }
+    &__text {
+        max-width: 700px;
+        border-radius: 30px;
+        padding: 2rem;
+        opacity: 0.9;
+        background-color: v.$background-orange;
+        margin: 0 auto;
+        text-align: center;
+
+        h3 {
+            color: #fff;
+            font-size: 8rem;
+            font-family: v.$ff-Poller-One;
+            text-align: center;
+            line-height: 1.2;
+            margin-bottom: 2.3rem;
+        }
+        a {
+            color: #fff;
+            text-transform: uppercase;
+            text-decoration: underline;
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.footer__bottom {
+    padding: 2rem;
+    p {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: v.$ff-Josefin-Sans;
+        font-weight: 300;
+    }
+    a {
+        font-family: v.$ff-Josefin-Sans;
+        font-weight: 300;
+        color: inherit;
+    }
+}
+
+.product-links {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    a:hover {
+        scale: 1.1;
+    }
+    a {
+        transition: scale 0.2s ease-in;
+    }
+}

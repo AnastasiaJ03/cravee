@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Poller+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script src="./js/main.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__img">
+            <img src="./images/main-logo.png" alt="logo" />
+          </div>
+          <ul class="header__list">
+            <li><a href="#" class="page">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Reviews</a></li>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+          <div class="hamburger__menu">
+           <img src="./images/icons/hamburger-menu.svg" alt="menu">
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__inner">
+        <div class="hero__img">
+          <img src="./images/hero-img.jpg" alt="" />
+        </div>
+        <div class="hero__text">
+          <h1>Best Crunchy & Spicy Chips</h1>
+        </div>
+        <div class="hero__pattern">
+          <img src="./images/icons/spiralling pattern.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <p>
+            Indulge in the delectable flavors and wholesome ingredients of
+            Cravee. Each bite is a burst of taste, carefully crafted to bring
+            joy to your palate. Whether you're seeking a savory snack to
+            satisfy.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products">
+      <div class="container">
+        <div class="products__heading">
+          <h2>
+            Discover our<br />
+            products
+          </h2>
+          <p>Whether you're seeking a savory snack to satisfy.</p>
+        </div>
+        <div class="swiper products__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/products/item1.jpg" alt="item1" />
+              <div class="products__text">
+                <h3>Best Crunchy Paprika onion</h3>
+                <a href="#" class="btn">Add to cart</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/products/item2.jpg" alt="" />
+              <div class="products__text">
+                <h3>The organic cocoa & Nibs</h3>
+                <a href="#" class="btn">Add to cart</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/products/item3.jpg" alt="" />
+              <div class="products__text">
+                <h3>Crunchy Chips salt & pepper</h3>
+                <a href="#" class="btn">Add to cart</a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/products/item4.jpg" alt="" />
+              <div class="products__text">
+                <h3>Crunchy Chips salt & pepper</h3>
+                <a href="#" class="btn">Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination products-swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <div class="swiper testimonials__swiper">
+          <img src="./images/block-quote.svg" alt="" />
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <p class="swiper__text">
+                Cravee has completely revolutionized my snacking experience. The
+                flavors are out of this world, and the quality is top-notch. I
+                can now enjoy guilt-free indulgence with their range of healthy
+                snacks. My personal favorite is the crispy chips they are just
+                amazing!.
+              </p>
+              <h2 class="swiper__heading">- Jennifer Peterson</h2>
+            </div>
+            <div class="swiper-slide">
+              <p class="swiper__text">
+                The world is full of possibilities, but few things compare to
+                the sheer delight of biting into something crispy and hearing
+                that satisfying crunch.
+              </p>
+              <h2 class="swiper__heading">- Baptiste Dupont</h2>
+            </div>
+            <div class="swiper-slide">
+              <p class="swiper__text">
+                Crispy and crunchy foods have a way of making ordinary moments
+                extraordinary, turning a simple snack into a memorable
+                experience.
+              </p>
+              <h2 class="swiper__heading">- Robert Stevens</h2>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <section class="pros">
+      <div class="container">
+        <div class="pros__inner">
+          <div class="pros__left">
+            <img src="./images/products/item4.jpg" alt="" />
+            <a href="https://www.youtube.com/embed/2-iXtcRv5Ts">
+              <img
+                src="./images/products/play-button-svgrepo-com (1).svg"
+                alt=""
+                class="play"
+              />
+            </a>
+          </div>
+          <div class="pros__right">
+            <div class="pros__right-heading">
+              <h2>
+                Why Our<br />
+                Food?
+              </h2>
+              <p>Whether you're seeking a savory snack to satisfy.</p>
+            </div>
+
+            <div class="pros__right-inner">
+              <div>
+                <h3>Taste and Quality</h3>
+                <p>
+                  Emphasize the exceptional taste and quality of Cravee
+                  products, setting them apart from other food options in the
+                  market.
+                </p>
+              </div>
+              <div>
+                <h3>Transparency and Trust</h3>
+                <p>
+                  Communicate the commitment to transparency in ingredients and
+                  manufacturing processes, building trust with customers.
+                </p>
+              </div>
+              <div>
+                <h3>Customer Satisfaction</h3>
+                <p>
+                  Showcase positive reviews and feedback from satisfied
+                  customers, highlighting their experiences with Cravee.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services">
+      <div class="container">
+        <div class="services__inner">
+          <div data-aos="fade-up-right">
+            <img src="./images/icons/balloon.png" alt="" srcset="" />
+            <h3>100% high quality product</h3>
+            <p>We have option of pick up in store</p>
+          </div>
+          <div data-aos="fade-up-right">
+            <img src="./images/icons/shopping-bag.png" alt="" />
+            <h3>Free shipping charge</h3>
+            <p>Inside City delivery within 5 days</p>
+          </div>
+          <div data-aos="fade-up-right">
+            <img src="./images/icons/bandage.png" alt="" />
+            <h3>Money back guarantee</h3>
+            <p>We will take return in some cases</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscribe">
+      <div class="container">
+        <div class="subscribe__inner">
+          <h2>Subscribe Us</h2>
+          <p>Subscribe to our newsletter for discounts and updates.</p>
+        </div>
+        <form class="subscribe__form">
+          <div class="subscribe__input">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email address"
+            />
+            <div class="subscribe__btn">
+              <button>Subscribe</button>
+            </div>
+        </form>
+        </div>
+        <div class="subscribe__socials">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__heading">
+        <img src="./images/spiralling pattern.png" alt="" class="spiralling">
+        <!-- <img src="./images/footer-bg.jpg" alt="" srcset=""> -->
+      </div>
+      <div class="container">
+        <div class="footer__text">
+          <h3>Hunt Your Hunger With Cravee</h3>
+          <a href="#">Explore Our Products</a>
+        </div>
+     
+      </div>
+    </footer>
+    <section class="footer__bottom">
+      <div class="container">
+        <p>&copy;2023 Cravee. Designed by <a href="#">TemplatesJungle</a></p>
+      </div>
+    </section>
+    <div class="product-links">
+      <a href="#">
+        <img src="./images/icons/cart.svg" alt="" class="cart">
+      </a>
+      <a href="#">
+        <img src="./images/icons/pumpkin.svg" alt="" class="pumpkin">
+      </a>
+    </div>
+  </body>
+</html>

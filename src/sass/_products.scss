@@ -1,0 +1,60 @@
+@use "./vars" as v;
+
+.products {
+    .swiper {
+        padding-block: 10rem;
+    }
+    .swiper-slide {
+        position: relative;
+        &:hover {
+            .btn {
+                visibility: visible;
+                opacity: 1;
+                transform: translate(-50%, -115%);
+                transition: opacity 0.5s ease-in-out 0.4s, transform 0.5s ease-in-out 0.2s;
+            }
+        }
+    }
+    &-swiper-pagination {
+        bottom: 5rem !important;
+    }
+    img {
+        border-radius: 20px;
+    }
+
+    &__heading {
+        h2 {
+            font-family: v.$ff-Poller-One;
+            font-weight: 500;
+            line-height: 1.2;
+            color: v.$active-links;
+            text-align: center;
+            font-size: 6rem;
+            margin-bottom: 3rem;
+        }
+        p {
+            text-align: center;
+            font-weight: 200;
+            font-size: 3rem;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 100%;
+        border: 1px solid #191919;
+        background-color: #fff;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        max-width: 200px;
+        h3 {
+            font-family: v.$ff-Poller-One;
+            font-size: 2rem;
+            text-align: center;
+            color: rgb(33, 37, 41);
+        }
+    }
+}
