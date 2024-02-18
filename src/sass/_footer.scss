@@ -1,7 +1,8 @@
 @use "./vars" as v;
+@use "./mixins" as m;
 
 .footer {
-    padding: 22rem 10rem 10rem 0;
+    padding: 22rem 0rem 10rem 0;
     background: url("../images/footer-bg.jpg") no-repeat center/cover;
     position: relative;
     &__heading {
@@ -29,6 +30,12 @@
             text-align: center;
             line-height: 1.2;
             margin-bottom: 2.3rem;
+            @include m.for-laptop {
+                font-size: 6rem;
+            }
+            @include m.for-laptop {
+                font-size: 4rem;
+            }
         }
         a {
             color: #fff;
