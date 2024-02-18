@@ -35,7 +35,7 @@
     &__pattern {
         width: 100%;
         position: absolute;
-        bottom: 0;
+        bottom: -1px;
         left: 0;
         overflow-clip-margin: content-box;
         overflow: clip;
