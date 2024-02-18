@@ -149,6 +149,11 @@ select {
   margin-left: auto;
   height: 100%;
 }
+@media (max-width: 599px) {
+  .overlay__menu .overlay__inner {
+    max-width: 65%;
+  }
+}
 .overlay__menu .menu-list {
   font-family: "Poller One", serif;
 }
