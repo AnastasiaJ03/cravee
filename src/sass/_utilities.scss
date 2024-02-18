@@ -59,7 +59,7 @@
         display: flex;
         align-items: center;
         gap: 4rem;
-        justify-content: center;
+        justify-content: space-between;
         img {
             margin-bottom: 1.5rem;
         }
@@ -67,11 +67,12 @@
     .overlay__inner {
         background-color: v.$background-header;
         padding: 1.7rem;
-        max-width: 45%;
         margin-left: auto;
         height: 100%;
-        @include m.for-phone {
-            max-width: 65%;
+        width: 40%;
+
+        @include m.for-tablet {
+            width: 100%;
         }
     }
     .menu-list {

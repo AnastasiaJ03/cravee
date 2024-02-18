@@ -137,7 +137,7 @@ select {
   display: flex;
   align-items: center;
   gap: 4rem;
-  justify-content: center;
+  justify-content: space-between;
 }
 .overlay__menu .logo img {
   margin-bottom: 1.5rem;
@@ -145,13 +145,13 @@ select {
 .overlay__menu .overlay__inner {
   background-color: #f6f4ef;
   padding: 1.7rem;
-  max-width: 45%;
   margin-left: auto;
   height: 100%;
+  width: 40%;
 }
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   .overlay__menu .overlay__inner {
-    max-width: 65%;
+    width: 100%;
   }
 }
 .overlay__menu .menu-list {
