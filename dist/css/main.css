@@ -376,6 +376,22 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .services__inner {
+    justify-content: left;
+  }
+}
+@media (max-width: 768px) {
+  .services__inner > div {
+    width: 50%;
+  }
+}
+@media (max-width: 599px) {
+  .services__inner > div {
+    width: 100%;
+  }
 }
 .services div > * + * {
   margin-top: 0.5rem;
