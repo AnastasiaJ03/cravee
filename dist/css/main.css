@@ -498,6 +498,7 @@ body {
 
 .product-links {
   position: fixed;
+  z-index: 5;
   bottom: 0;
   right: 0;
   display: flex;
