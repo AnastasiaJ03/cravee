@@ -24,4 +24,18 @@ const products_swiper = new Swiper(".products__swiper", {
   },
 });
 
+const burger = document.querySelector(".hamburger__menu");
+const overlay = document.querySelector(".overlay__menu");
+
+const close_btn = document.querySelector(".close");
+close_btn.addEventListener("click", () => {
+  overlay.style.opacity = 0;
+  overlay.style.visibility = "hidden";
+});
+
+burger.addEventListener("click", () => {
+  overlay.style.opacity = 1;
+  overlay.style.visibility = "visible";
+});
+
 AOS.init();

@@ -43,3 +43,41 @@
     border-radius: 50%;
     border: 2px solid #fff;
 }
+
+.overlay__menu {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+    background: rgba(#000, 0.5);
+    height: 100vh;
+    width: 100%;
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        justify-content: center;
+        img {
+            margin-bottom: 1.5rem;
+        }
+    }
+    .overlay__inner {
+        background-color: v.$background-header;
+        padding: 1.7rem;
+        max-width: 45%;
+        margin-left: auto;
+        height: 100%;
+    }
+    .menu-list {
+        font-family: v.$ff-Poller-One;
+        li {
+            margin-bottom: 3rem;
+        }
+        a {
+            color: #000000a6;
+            font-size: 1.5rem;
+        }
+    }
+}

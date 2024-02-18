@@ -122,6 +122,44 @@ select {
   border: 2px solid #fff;
 }
 
+.overlay__menu {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+}
+.overlay__menu .logo {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  justify-content: center;
+}
+.overlay__menu .logo img {
+  margin-bottom: 1.5rem;
+}
+.overlay__menu .overlay__inner {
+  background-color: #f6f4ef;
+  padding: 1.7rem;
+  max-width: 45%;
+  margin-left: auto;
+  height: 100%;
+}
+.overlay__menu .menu-list {
+  font-family: "Poller One", serif;
+}
+.overlay__menu .menu-list li {
+  margin-bottom: 3rem;
+}
+.overlay__menu .menu-list a {
+  color: rgba(0, 0, 0, 0.6509803922);
+  font-size: 1.5rem;
+}
+
 .testimonials {
   margin-bottom: 12rem;
 }
